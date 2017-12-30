@@ -1,0 +1,9 @@
+For checkpoint 1:   9/9,  9/12,  9/14, all at 00:01 a.m.   
+
+For checkpoint 2:   9/16, 9/19, 9/21, all at 00:01 a.m.
+
+ 
+
+(1) So make sure you check in your code the night before.
+
+(2) Whatever you get on 9/14 is your final grade for checkpoint 1, and 9/21 is your final grade for checkpoint 2.

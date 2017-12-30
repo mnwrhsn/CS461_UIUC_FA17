@@ -1,0 +1,15 @@
+There will be five projects during the semester that will count for 50% of your course grade. Unless otherwise indicated, you SHOULD work in a team of two. You may consult general reference material, but you may not collaborate outside your team. The material you turn in MUST be entirely your team’s work, and you are bound by the Student Code. Please start early.
+
+
+
+Number	Title			Due Date				Lead TA	Second TA
+1	Cryptography		Wednesday, September 20th at 11:59pm	Ben	Jerry
+2	Application Security	Wednesday, October 4th at 11:59pm	Justin	Ben
+3	Network Security	Wednesday, November 8th at 11:59pm	Samir	Manasa
+4	Web Programming	Wednesday, November 29th at 11:59pm		Manasa	Samir
+5	Advanced Concepts	Wednesday, December 13th at 11:59pm	Phuong	Justin
+
+
+
+Lateness
+No assignments will be accepted late. The instructor may grant individual extensions, but only under extraordinary circumstances.
